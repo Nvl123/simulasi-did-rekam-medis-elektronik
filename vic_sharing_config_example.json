@@ -1,0 +1,109 @@
+{
+  "vic_sharing_configurations": {
+    "emergency_consultation": {
+      "name": "Konsultasi Darurat",
+      "description": "Untuk konsultasi darurat di rumah sakit lain",
+      "duration_hours": 4,
+      "hospital_restriction": "Rumah Sakit B",
+      "permissions": {
+        "diagnosis": true,
+        "treatment": true,
+        "doctor": true,
+        "date": true,
+        "notes": false
+      }
+    },
+    "patient_referral": {
+      "name": "Rujukan Pasien",
+      "description": "Untuk rujukan pasien ke spesialis",
+      "duration_hours": 168,
+      "hospital_restriction": "Rumah Sakit C",
+      "permissions": {
+        "diagnosis": true,
+        "treatment": true,
+        "doctor": true,
+        "date": true,
+        "notes": true
+      }
+    },
+    "insurance_verification": {
+      "name": "Verifikasi Asuransi",
+      "description": "Untuk verifikasi data pasien ke asuransi",
+      "duration_hours": 2,
+      "hospital_restriction": null,
+      "permissions": {
+        "diagnosis": true,
+        "treatment": false,
+        "doctor": true,
+        "date": true,
+        "notes": false
+      }
+    },
+    "long_term_monitoring": {
+      "name": "Monitoring Jangka Panjang",
+      "description": "Untuk monitoring pasien kronis",
+      "duration_hours": 720,
+      "hospital_restriction": "Rumah Sakit D",
+      "permissions": {
+        "diagnosis": true,
+        "treatment": true,
+        "doctor": true,
+        "date": true,
+        "notes": true
+      }
+    },
+    "quick_verification": {
+      "name": "Verifikasi Cepat",
+      "description": "Untuk verifikasi data singkat",
+      "duration_hours": 1,
+      "hospital_restriction": null,
+      "permissions": {
+        "diagnosis": true,
+        "treatment": false,
+        "doctor": false,
+        "date": true,
+        "notes": false
+      }
+    }
+  },
+  "default_settings": {
+    "default_duration_hours": 24,
+    "default_hospital_restriction": null,
+    "default_permissions": {
+      "diagnosis": true,
+      "treatment": true,
+      "doctor": true,
+      "date": true,
+      "notes": false
+    }
+  },
+  "security_guidelines": {
+    "minimum_duration_hours": 1,
+    "maximum_duration_hours": 8760,
+    "recommended_durations": {
+      "emergency": "1-4 hours",
+      "consultation": "4-24 hours",
+      "referral": "1-7 days",
+      "monitoring": "7-30 days",
+      "long_term": "30-90 days"
+    },
+    "data_sensitivity_levels": {
+      "low": ["date", "doctor"],
+      "medium": ["diagnosis", "treatment"],
+      "high": ["notes"]
+    }
+  },
+  "api_endpoints": {
+    "issue_vic": "POST /api/issue-vic",
+    "access_shared_vic": "GET /api/vic-share/{token}",
+    "create_vic_share": "POST /api/vic-share/create",
+    "verify_vic": "GET /verify/{hash}"
+  },
+  "error_codes": {
+    "400": "Bad Request - Periksa format input",
+    "404": "Not Found - Data tidak ditemukan",
+    "500": "Server Error - Hubungi administrator"
+  }
+}
+
+

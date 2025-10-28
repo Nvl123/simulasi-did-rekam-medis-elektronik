@@ -1,0 +1,335 @@
+
+/** cta-section **/
+
+.cta-section{
+  position: relative;
+}
+
+.cta-section .text-box{
+  position: relative;
+  max-width: 650px;
+  z-index: 1;
+}
+
+.cta-section .text-box h2{
+  display: block;
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.cta-section .text-box a{
+  position: relative;
+  display: inline-block;
+  font-size: 46px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+}
+
+.cta-section .image-box{
+  position: absolute;
+  top: -35px;
+  right: 0px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  border: solid;
+  border-width: 2px;
+}
+
+.cta-section .image-box img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.cta-section .bubble-shape .bubble{
+  position: absolute;
+  width: 489px;
+  height: 489px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
+}
+
+.cta-section .bubble-shape .bubble-1{
+  left: -72px;
+  top: -298px;
+  -webkit-animation: zoom-fade 9s infinite linear;
+  animation: zoom-fade 9s infinite linear;
+}
+
+.cta-section .bubble-shape .bubble-2{
+  left: -324px;
+  top: -130px;
+  -webkit-animation: zoom-fade 7s infinite linear;
+  animation: zoom-fade 7s infinite linear;
+}
+
+.cta-section .bubble-shape .bubble-3{
+  top: -146px;
+  right: 87px;
+  -webkit-animation: zoom-fade 7s infinite linear;
+  animation: zoom-fade 7s infinite linear;
+}
+
+.cta-section .bubble-shape .bubble-4{
+  right: 146px;
+  bottom: -227px;
+  -webkit-animation: zoom-fade 9s infinite linear;
+  animation: zoom-fade 9s infinite linear;
+}
+
+.cta-section .pattern-layer{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 481px;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.cta-section .big-text{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  font-size: 128px;
+  line-height: 95px;
+  font-family: var(--title-font);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.10);
+}
+
+
+/** cta-style-two **/
+
+.cta-style-two{
+  position: relative;
+}
+
+.cta-style-two .content-box{
+  position: relative;
+  display: block;
+}
+
+.cta-style-two .content-box h2{
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+  margin-bottom: 38px;
+}
+
+.cta-style-two .content-box .btn-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-style-two .content-box .btn-box a{
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 600;
+  padding: 17px 40px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.cta-style-two .content-box .btn-box a:hover{
+  background: #fff;
+}
+
+.cta-style-two .content-box .btn-box a:first-child{
+  background: #fff;
+}
+
+.cta-style-two .content-box .btn-box a:first-child:hover{
+  color: #fff;
+  background: transparent;
+}
+
+.cta-style-two .image-layer .image-1{
+  position: absolute;
+  left: -188px;
+  bottom: 50px;
+}
+
+.cta-style-two .image-layer .image-2{
+  position: absolute;
+  right: -390px;
+  bottom: 67px;
+}
+
+.cta-style-two .bubble-shape .bubble{
+  position: absolute;
+  width: 362px;
+  height: 362px;
+  background: #fff;
+  opacity: 0.10;
+  border-radius: 50%;
+}
+
+.cta-style-two .bubble-shape .bubble-1{
+  left: 15px;
+  top: -155px;
+}
+
+.cta-style-two .bubble-shape .bubble-2{
+  left: 140px;
+  top: 30px;
+}
+
+.cta-style-two .bubble-shape .bubble-3{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 520px;
+  height: 520px;
+}
+
+.cta-style-two .pattern-layer{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 481px;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.cta-section .image-box-2{
+  position: absolute;
+  right: -100px;
+  bottom: 30px;
+}
+
+.cta-section.b_radius{
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+/** rtl-css **/
+
+.rtl .cta-section .image-box{
+  right: inherit;
+  left: 0px;
+}
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+  .cta-section .image-box{
+    display: none;
+  }
+
+  .cta-section .text-box{
+    max-width: 100%;
+  }
+
+  .cta-section .bubble-shape,
+  .cta-section .pattern-layer,
+  .cta-style-two .image-layer{
+    display: none;
+  }
+
+  .cta-section{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .cta-section .image-box-2{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .cta-style-two .bubble-shape,
+  .cta-style-two .pattern-layer{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .cta-section .inner-container,
+  .cta-style-two{
+    padding: 62px 0px 70px 0px;
+  }
+
+  .cta-section .text-box h2,
+  .cta-style-two .content-box h2{
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .cta-section .big-text{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 599px){
+  .cta-section .text-box a{
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 499px){
+  .cta-style-two .content-box .btn-box{
+    display: block;
+  }
+
+  .cta-style-two .content-box .btn-box a:first-child{
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

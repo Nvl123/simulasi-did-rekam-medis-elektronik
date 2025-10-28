@@ -1,0 +1,100 @@
+
+/** contact-section **/
+
+.contact-section{
+  position: relative;
+}
+
+.contact-section .map-inner{
+  position: relative;
+  display: block;
+  height: 501px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.contact-section .map-inner iframe{
+  position: relative;
+  width: 100%;
+  height: 501px;
+}
+
+.contact-section .form-inner{
+  position: relative;
+  display: block;
+}
+
+
+/** rtl-css **/
+
+
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+  .contact-section .form-inner{
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .contact-section{
+    padding: 70px 0px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+
+}
+
+@media only screen and (max-width: 499px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

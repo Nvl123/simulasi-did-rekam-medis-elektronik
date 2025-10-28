@@ -1,0 +1,155 @@
+/* Responsive Css */
+
+
+@media only screen and (max-width: 1749px){
+
+}
+
+
+@media only screen and (max-width: 1499px){
+
+}
+
+
+@media only screen and (max-width: 1399px){
+
+}
+
+
+@media only screen and (max-width: 1299px){
+  .single-support-box{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .single-support-box .inner-box h5{
+    font-size: 12px;
+  }
+
+  .single-support-box .inner-box a{
+    font-size: 13px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px){
+  .main-menu,
+  .sticky-header,
+  .main-header.style-one .outer-container:before{
+    display: none !important;
+  }
+
+  .menu-area .mobile-nav-toggler {
+    display: block;
+    padding: 10px;
+  }
+
+  .megamenu ul li:first-child{
+    display: none;
+  }
+
+  .support-style-two{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  .main-menu .navigation > li > ul,
+  .main-menu .navigation > li > ul > li > ul,
+  .main-menu .navigation > li > .megamenu{
+    display:block !important;
+    visibility:hidden;
+    opacity:0;
+  }
+}
+
+
+@media only screen and (max-width: 991px){
+
+}
+
+
+@media only screen and (max-width: 767px){
+  .sec-title h2{
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .sec-title h2 br{
+    display: none;
+  }
+
+  .support-style-two{
+    padding-bottom: 40px;
+  }
+
+  .fluid-section{
+    padding: 70px 0px;
+  }
+
+  .support-style-two.pt_120{
+    padding-top: 70px;
+  }
+
+  .support-style-two .inner-container{
+    padding: 70px 0px 40px 0px;
+  }
+
+  .support-style-two.p_0{
+    padding: 0px !important;
+  }
+}
+
+
+@media only screen and (max-width: 599px){
+  .pagination li a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .search-popup .upper-box{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 499px){
+  .mobile-menu,
+  .chat-popup{
+    width: 100%;
+  }
+
+  .support-style-two .single-item{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sec-title h2{
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

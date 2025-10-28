@@ -1,0 +1,280 @@
+
+/** service-details **/
+
+.service-details{
+  position: relative;
+}
+
+.service-sidebar{
+  position: relative;
+  display: block;
+}
+
+.service-sidebar .category-widget .category-list li{
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.service-sidebar .category-widget .category-list li:last-child{
+  margin-bottom: 0px;
+}
+
+.service-sidebar .category-widget .category-list li a{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--title-color);
+  font-weight: 600;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.05);
+  padding: 17px 30px;
+  border-left: solid;
+  border-width: 5px;
+  border-color: #7A0101;
+  z-index: 1;
+  transition: all 500ms ease;
+}
+
+.service-sidebar .category-widget .category-list li a:hover,
+.service-sidebar .category-widget .category-list li a.current{
+  color: #fff;
+}
+
+.service-sidebar .category-widget .category-list li a:before{
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: all 500ms ease;
+}
+
+.service-sidebar .category-widget .category-list li a:hover:before,
+.service-sidebar .category-widget .category-list li a.current:before{
+  width: 100%;
+}
+
+.service-sidebar .contact-widget .inner-box{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 267px 30px 30px 30px;
+  border-top: solid;
+  border-width: 5px;
+}
+
+.service-sidebar .contact-widget .inner-box .bg-layer{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service-sidebar .contact-widget .inner-box .bg-layer:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(0deg, #CE1810 0%, rgba(206, 24, 16, 0) 41.75%);
+}
+
+.service-sidebar .contact-widget .inner-box h4{
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.service-sidebar .contact-widget .inner-box a{
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+  line-height: 36px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.service-sidebar .contact-widget .inner-box a:hover{
+  text-decoration: underline;
+}
+
+.service-details-content{
+  position: relative;
+  display: block;
+}
+
+.service-details-content h2{
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.service-details-content .content-one .image-box{
+  position: relative;
+  display: block;
+  border-radius: 6px;
+  margin-bottom: 33px;
+}
+
+.service-details-content .content-one .image-box img{
+  width: 100%;
+  border-radius: 6px;
+}
+
+.service-details-content .content-one h2{
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 18px;
+}
+
+.service-details-content p{
+  margin-bottom: 26px;
+}
+
+.service-details-content p:last-child{
+  margin-bottom: 0px;
+}
+
+.service-details-content .content-two .single-item{
+  position: relative;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+  padding: 34px 30px 34px 30px;
+  border-top: solid;
+  border-width: 5px;
+  margin-bottom: 30px;
+}
+
+.service-details-content .content-two .single-column:nth-child(2) .single-item{
+  border-color: var(--secondary-color) !important;
+}
+
+.service-details-content .content-two .single-item h3{
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.service-details-content .content-two .single-item p{
+  line-height: 28px;
+}
+
+.service-details-content .content-three .image-box{
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.service-details-content .content-three .image-box img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.service-details-content .content-three .text-box{
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+
+
+/** rtl-css **/
+
+.rtl .service-sidebar{
+  margin-right: 0px;
+  margin-left: 30px;
+}
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 991px){
+  .service-sidebar{
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .rtl .service-sidebar{
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .service-details{
+    padding: 70px 0px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+
+}
+
+@media only screen and (max-width: 499px){
+  .service-sidebar .contact-widget .inner-box a{
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

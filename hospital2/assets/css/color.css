@@ -1,0 +1,206 @@
+
+
+
+/*********************************** color ******************************************/
+
+.main-menu .navigation > li.current > a,
+.main-menu .navigation > li:hover > a,
+.main-menu .navigation > li > ul > li > a:hover,
+.main-menu .navigation > li > .megamenu li > a:hover,
+.main-menu .navigation > li > ul > li > ul > li > a:hover,
+.scroll-to-top .scroll-bar-text,
+.main-header .menu-right-content .search-toggler:hover,
+.main-header .theme-btn,
+.banner-carousel .owl-dots button,
+.sec-title .sub-title,
+.processing-block-one .inner-box span,
+.chooseus-block-one .inner-box h3 a:hover,
+.chooseus-block-one .inner-box .theme-btn,
+.news-block-one .inner-box .lower-content h4 a:hover,
+.subscribe-section .form-inner .form-group button[type='submit'],
+.main-footer .links-widget .links-list li a:hover,
+.main-footer .contact-widget .widget-content h3 a,
+.footer-bottom .bottom-inner p a,
+.footer-bottom .bottom-inner .location-box p i,
+.chooseus-block-two .inner-box .icon-box,
+.about-style-two .rotate-box .curved-circle .char25,
+.about-style-two .rotate-box .curved-circle .char26,
+.about-style-two .rotate-box .curved-circle .char1,
+.about-style-two .rotate-box .curved-circle .char2,
+.service-block-one .inner-box .lower-content h3 a:hover,
+.team-block-one .inner-box .lower-content h4 a:hover,
+.testimonial-block-one .inner-box .icon-box,
+.news-block-two .inner-box .post-date i,
+.news-block-two .inner-box .post-info li i,
+.cta-style-two .content-box .btn-box a:first-child,
+.cta-style-two .content-box .btn-box a:hover,
+.banner-carousel .content-box .upper-text,
+.content_block_four .content-box .list-style-one li:before,
+.support-style-two .single-item h2 a:hover,
+.chooseus-block-three .inner-box:hover .icon-box,
+.service-block-two .inner-box .content-box h3 a:hover,
+.funfact-block-three .inner-box .count-outer,
+.funfact-block-three .inner-box:hover .icon-box,
+.event-block-one .inner-box h3 a:hover,
+.sec-title h2 span,
+.news-block-three .inner-box h3 a:hover,
+.news-block-three .inner-box .link-box a:hover,
+.banner-style-four .content-box .upper-text,
+.feature-block-two .inner-box h3 a:hover,
+.fluid-section .accordion .acc-btn.active .icon-box,
+.testimonial-style-two .testimonial-content .icon-box,
+.testimonial-style-two .owl-dots button.active,
+.news-block-four .inner-box h4 a:hover,
+.news-block-four .inner-box .post-info li a:hover,
+.news-block-four .inner-box .post-info li i,
+.news-block-four .inner-box .link a:hover,
+.main-footer .logo-widget .info-list li a:hover,
+.main-footer .logo-widget .info-list li i,
+.feature-block-three .inner-box .icon-box,
+.fluid-style-two .video-column .video-btn a,
+.fluid-style-two .testimonial-content .icon-box,
+.faq-style-two .content-box .support-box h3 a:hover,
+.page-title .bread-crumb li a:hover,
+.event-details-content .content-one .post-info li i,
+.event-details-content .content-two .video-content .video-btn a,
+.event-sidebar .category-widget .category-list li a:hover,
+.event-sidebar .category-widget .category-list li a.current,
+.event-sidebar .schedule-widget .info-list li a:hover,
+.team-details .content-box .info-box .single-item p a:hover,
+.error-section .content-box p a:hover,
+.error-section .content-box h1,
+.blog-sidebar .search-widget .search-form .form-group input:focus + button,
+.blog-sidebar .search-widget .search-form .form-group button:hover,
+.blog-sidebar .category-widget .cagegory-list li a:hover,
+.blog-sidebar .post-widget .post-inner .post h5 a:hover,
+.blog-sidebar .post-widget .post-inner .post .post-date i,
+.blog-sidebar .archive-widget .archive-list li a:hover,
+.news-block-one .inner-box .lower-content h3 a:hover,
+.blog-details-content .content-one .video-content .video-btn a,
+.blog-details-content .post-share-option .social-links li a:hover
+
+{
+  color: var(--theme-color);
+}
+
+
+/** background **/
+
+button.rtl,
+button.ltr,
+.header-top,
+.theme-btn.btn-one,
+.chat-icon button,
+.chat-popup .close-chat,
+.content_block_one .content-box .tabs-box .tab-btns .tab-btn:before,
+.list-style-one li:before,
+.service-section .tab-btns .tab-btn.active-btn,
+.service-section .tab-btns .tab-btn:after,
+.funfact-section .inner-container,
+.processing-block-one .inner-box span:before,
+.processing-section .inner-container:before,
+.chooseus-section .bg-layer:before,
+.chooseus-block-one .inner-box .icon-box,
+.chooseus-block-one .inner-box .theme-btn:before,
+.image_block_two .image-box .experience-box .year-box,
+.cta-section,
+.subscribe-section,
+.main-footer .social-links li a:hover,
+.chooseus-block-two .overlay-content,
+.chooseus-block-two .inner-box:hover,
+.image_block_three .image-box .funfact-inner .funfact-block:first-child,
+.content_block_three .content-box .inner-box .single-item .icon-box,
+.feature-block-one .inner-box .icon-box,
+.funfact-style-two .inner-container,
+.brand-style-two .outer-container .title-text,
+.nav-style-one .owl-nav button:hover,
+.news-block-two .inner-box:hover .post-date,
+.cta-style-two,
+.chooseus-block-three .inner-box:before,
+.chooseus-block-three .inner-box .icon-box,
+.service-block-two .inner-box .content-box .icon-box,
+.funfact-block-three .inner-box .icon-box,
+.header-style-four .header-top .top-inner,
+.header-style-four .header-top .top-inner:before,
+.banner-style-four .image-box .icon-box,
+.funfact-section.fluid,
+.fluid-section .bg-layer:before,
+.testimonial-style-two .owl-dots button:after,
+.news-block-four .inner-box .post-date,
+.header-style-five .header-top .top-inner,
+.feature-block-three .inner-box .icon-box:before,
+.feature-block-three .inner-box:before,
+.fluid-style-two .testimonial-column .owl-dots button:hover,
+.fluid-style-two .testimonial-column .owl-dots button.active,
+.faq-style-two .bg-layer:before,
+.faq-style-two .content-box .support-box,
+.subscribe-section .form-inner .form-group input[type='email'],
+.service-sidebar .category-widget .category-list li a:before,
+.team-details .image-box .social-links li a:hover,
+.progress-box .bar-inner,
+.team-details .content-box .info-box .single-item .icon-box,
+.pagination li a:hover,
+.pagination li a.current,
+.blog-sidebar .tags-widget .tags-list li a:hover,
+.sidebar-page-container .news-block-one .inner-box .lower-content .post-info li span,
+.blog-details-content .news-block-one .inner-box .lower-content blockquote,
+.blog-details-content .post-share-option .tags-list li a:hover
+
+{
+  background: var(--theme-color);
+}
+
+
+
+
+/** border-color **/
+
+.main-menu .navigation > li > ul,
+.main-menu .navigation > li > .megamenu,
+.theme-btn.btn-one,
+.sec-title .sub-title,
+.chat-popup .chat-form .form-group input:focus,
+.chat-popup .chat-form .form-group textarea:focus,
+.chooseus-block-one .inner-box .theme-btn:hover,
+.cta-section .image-box,
+.main-footer .social-links li a:hover,
+.nav-style-one .owl-nav button:hover,
+.banner-carousel .content-box .upper-text,
+.main-footer .subscribe-widget .form-group input:focus,
+.service-sidebar .contact-widget .inner-box,
+.service-details-content .content-two .single-item,
+.default-form .form-group input:focus,
+.default-form .form-group textarea:focus,
+.pagination li a:hover,
+.pagination li a.current,
+.blog-sidebar .search-widget .search-form .form-group input:focus + button,
+.blog-sidebar .search-widget .search-form .form-group button:hover,
+.blog-sidebar .tags-widget .tags-list li a:hover,
+.blog-details-content .post-share-option .tags-list li a:hover
+
+{
+  border-color: var(--theme-color) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

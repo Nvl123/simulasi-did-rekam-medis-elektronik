@@ -1,0 +1,370 @@
+
+/** faq-section **/
+
+.faq-section{
+  position: relative;
+}
+
+.image_block_two .image-box .image{
+  position: relative;
+  display: block;
+  border-radius: 8px;
+}
+
+.image_block_two .image-box .image img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.image_block_two .image-box .experience-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #09201C;
+  border-radius: 8px;
+  padding: 20px;
+  gap: 25px;
+}
+
+.image_block_two .image-box .experience-box .year-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 94px;
+  width: 94px;
+  height: 94px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.image_block_two .image-box .experience-box .year-box h2{
+  font-size: 45px;
+  line-height: 34px;
+  color: #fff;
+  margin-bottom: 11px;
+}
+
+.image_block_two .image-box .experience-box .year-box h5{
+  display: block;
+  font-size: 17px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.image_block_two .image-box .experience-box h4{
+  display: block;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.image_block_two .image-box .image-shape .shape-1{
+  position: absolute;
+  left: 178px;
+  top: 35px;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.image_block_two .image-box .image-shape .shape-2{
+  position: absolute;
+  right: 100px;
+  bottom: 0px;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.image_block_two .image-box{
+  position: relative;
+  display: block;
+}
+
+.content_block_two .content-box{
+  position: relative;
+  display: block;
+}
+
+.content_block_two .content-box .accordion-box .accordion{
+  position: relative;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.10);
+}
+
+.content_block_two .content-box .accordion-box .accordion .acc-btn{
+  position: relative;
+  padding: 22px 50px 22px 0px;
+  cursor: pointer;
+}
+
+.content_block_two .content-box .accordion-box .accordion .acc-btn h4{
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.content_block_two .content-box .accordion-box .accordion .acc-content{
+  padding-bottom: 23px;
+}
+
+.content_block_two .content-box .accordion-box .accordion .acc-btn .icon-box{
+  position: absolute;
+  top: 31px;
+  right: 0px;
+  font-size: 12px;
+  color: var(--title-color);
+}
+
+.content_block_two .content-box .accordion-box .accordion .acc-btn.active .icon-box i{
+  opacity: 0;
+}
+
+.content_block_two .content-box .accordion-box .accordion .acc-btn .icon-box:before{
+  position: absolute;
+  content: '';
+  background: #222;
+  width: 12px;
+  height: 2px;
+  border-radius: 30px;
+  top: 5px;
+  right: 0px;
+  opacity: 0;
+}
+
+.content_block_two .content-box .accordion-box .accordion .acc-btn.active .icon-box:before{
+  opacity: 1;
+}
+
+
+/** faq-style-two **/
+
+.faq-style-two{
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-style-two .bg-layer:before{
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.faq-style-two .content-box{
+  position: relative;
+  display: block;
+}
+
+.faq-style-two .content-box .support-box{
+  position: relative;
+  display: block;
+  text-align: center;
+  border: 1px solid #272727;
+  border-radius: 20px 20px 30px 30px;
+  border-bottom: 5px solid #7B0000;
+  padding-top: 24px;
+  overflow: hidden;
+  max-width: 280px;
+}
+
+.faq-style-two .content-box .support-box h3{
+  position: relative;
+  display: block;
+  background: #272727;
+  padding: 21px 20px 20px 20px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.faq-style-two .content-box .support-box h3 a{
+  display: inline-block;
+  color: #fff;
+}
+
+.faq-style-two .content-box .support-box h3 a:hover{
+  
+}
+
+.faq-style-two .content-box .support-box .text-box h4{
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.faq-style-two .content-box .support-box h2{
+  display: block;
+  font-size: 36px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+
+.content_block_six .faq-content{
+  position: relative;
+  display: block;
+}
+
+.content_block_six .faq-content .accordion{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border-top: solid;
+  border-width: 5px;
+  border-color: #7B0000;
+  box-shadow: 0px -10px 60px 0px rgba(0, 0, 0, 0.06);
+}
+
+.content_block_six .faq-content .accordion:last-child{
+  margin-bottom: 0px;
+}
+
+.content_block_six .faq-content .accordion .acc-btn{
+  position: relative;
+  padding: 20px 30px;
+  padding-right: 50px;
+  cursor: pointer;
+}
+
+.content_block_six .faq-content .accordion .acc-btn h4{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.content_block_six .faq-content .accordion .acc-btn .icon-box{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transform: rotate(90deg);
+  font-size: 12px;
+  color: var(--title-color);
+}
+
+.content_block_six .faq-content .accordion .acc-btn.active .icon-box{
+  transform: rotate(-90deg);
+}
+
+.content_block_six .faq-content .accordion .acc-content{
+  position: relative;
+  padding: 0px 40px 25px 30px;
+}
+
+
+/** faq-form **/
+
+.faq-form{
+  position: relative;
+}
+
+.faq-form .inner-container{
+  position: relative;
+  border-top: 1px solid #E5E5E5;
+}
+
+.faq-form .form-inner{
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+
+/** rtl-css **/
+
+.rtl .content_block_two .content-box{
+  margin-left: 0px;
+  margin-right: 60px;
+}
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1400px){
+
+}
+
+@media only screen and (max-width: 991px){
+  .content_block_two .content-box{
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
+  .rtl .content_block_two .content-box{
+    margin-right: 0px;
+  }
+
+  .faq-style-two .content-box{
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .image_block_two .image-box .image{
+    margin: 0px 0px 30px 0px;
+  }
+
+  .faq-section,
+  .faq-style-two,
+  .faq-form .inner-container{
+    padding: 70px 0px;
+  }
+}
+
+@media only screen and (max-width: 599px){
+
+}
+
+@media only screen and (max-width: 499px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

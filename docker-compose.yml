@@ -1,0 +1,141 @@
+version: '3.8'
+
+services:
+  # Blockchain Server (Streamlit)
+  blockchain-server:
+    build: ./blockchain-server
+    container_name: did-blockchain-server
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - DATABASE_URL=mysql+pymysql://root:password@mariadb:3306/did_blockchain
+    volumes:
+      - ./blockchain-server:/app
+    networks:
+      - did-network
+    depends_on:
+      - mariadb
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    command: ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
+  # API Server (FastAPI)
+  api-server:
+    build: ./blockchain-server
+    container_name: did-api-server
+    ports:
+      - "8502:8502"
+    volumes:
+      - ./blockchain-server:/app
+    networks:
+      - did-network
+    environment:
+      - DATABASE_URL=mysql+pymysql://root:password@mariadb:3306/did_blockchain
+    depends_on:
+      - mariadb
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8502/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    command: ["python", "api_server.py"]
+
+  # Flask API for VIC Verification
+  flask-api:
+    build: ./blockchain-server
+    container_name: did-flask-api
+    ports:
+      - "8505:8501"
+    volumes:
+      - ./blockchain-server:/app
+    networks:
+      - did-network
+    environment:
+      - DATABASE_URL=mysql+pymysql://root:password@mariadb:3306/did_blockchain
+    depends_on:
+      - mariadb
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    command: ["python", "flask_api.py"]
+
+  # MariaDB Database
+  mariadb:
+    image: mariadb:10.11
+    container_name: did-mariadb
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=did_blockchain
+      - MYSQL_USER=did_user
+      - MYSQL_PASSWORD=did_password
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    networks:
+      - did-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # Hospital 1 Streamlit App
+  hospital1:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    container_name: did-hospital1
+    ports:
+      - "8503:8501"
+    networks:
+      - did-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    depends_on:
+      - blockchain-server
+    command: ["streamlit", "run", "hospital1/app.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.headless=true"]
+
+  # Hospital 2 Streamlit App
+  hospital2:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    container_name: did-hospital2
+    ports:
+      - "8504:8502"
+    networks:
+      - did-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8502/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    depends_on:
+      - blockchain-server
+    command: ["streamlit", "run", "hospital2/app.py", "--server.port=8502", "--server.address=0.0.0.0", "--server.headless=true"]
+
+networks:
+  did-network:
+    driver: bridge
+
+volumes:
+  mariadb_data:
+  blockchain-data:
+    driver: local
