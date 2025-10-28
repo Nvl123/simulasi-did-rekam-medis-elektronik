@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">DID Medical Records</string>
+    
+    <!-- Main Activity -->
+    <string name="main_title">DID Medical Records</string>
+    <string name="main_subtitle">Secure, Decentralized Medical Records</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="digital_wallet">Digital Wallet</string>
+    <string name="security_settings">Security Settings</string>
+    
+    <!-- Scanner Activity -->
+    <string name="scanner_title">Scan QR Code</string>
+    <string name="scanner_instruction">Position QR code within the frame</string>
+    <string name="scanner_instruction_detail">Make sure the QR code is clearly visible and well-lit</string>
+    <string name="scanner_scanning">Scanning QR Code...</string>
+    <string name="scanner_success">QR Code scanned successfully!</string>
+    <string name="scanner_error">Failed to process QR code</string>
+    <string name="scanner_invalid">Invalid Verifiable Credential format</string>
+    <string name="cancel">Cancel</string>
+    <string name="flashlight">Flashlight</string>
+    
+    <!-- Digital Wallet -->
+    <string name="wallet_title">Digital Wallet</string>
+    <string name="wallet_empty_title">No Medical Records</string>
+    <string name="wallet_empty_message">Scan a QR code to add your first medical record</string>
+    <string name="refresh">Refresh</string>
+    <string name="credential_verified">Verified</string>
+    <string name="credential_unverified">Unverified</string>
+    
+    <!-- Authentication -->
+    <string name="auth_title">Security &amp; Authentication</string>
+    <string name="biometric_title">Biometric Authentication</string>
+    <string name="biometric_available">Biometric authentication is available</string>
+    <string name="biometric_unavailable">Biometric authentication is not available</string>
+    <string name="biometric_authenticate">Authenticate with Biometric</string>
+    <string name="pin_title">PIN Authentication</string>
+    <string name="pin_message">Use PIN for additional security</string>
+    <string name="set_pin">Set PIN</string>
+    <string name="settings_title">Security Settings</string>
+    <string name="settings_message">Configure security preferences</string>
+    <string name="open_settings">Open Settings</string>
+    
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="loading">Loading...</string>
+    <string name="retry">Retry</string>
+    <string name="version">Version 1.0.0</string>
+    
+    <!-- Permissions -->
+    <string name="camera_permission_required">Camera permission is required to scan QR codes</string>
+    <string name="biometric_permission_required">Biometric permission is required for secure access</string>
+    
+    <!-- Medical Records -->
+    <string name="patient_name">Patient Name</string>
+    <string name="patient_age">Age</string>
+    <string name="patient_gender">Gender</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="treatment">Treatment</string>
+    <string name="medications">Medications</string>
+    <string name="notes">Notes</string>
+    <string name="checkup_date">Checkup Date</string>
+    <string name="doctor_name">Doctor</string>
+    <string name="hospital_name">Hospital</string>
+</resources>
